@@ -3,7 +3,7 @@ def split_by_index(s, indexes):
     words = []
     counter = 0
     for i in s:
-        if counter < 5:
+        if counter < len(indexes):
             if i != s[indexes[counter]]:
                 words.append(i)
             else:
