@@ -1,21 +1,15 @@
-def split_by_index(s, indexes):
+from typing import List
+
+def split_by_index(s: str, indexes: List[int]):
     result = []
-    words = []
     counter = 0
-    for i in s:
-        if counter < len(indexes):
-            if i != s[indexes[counter]]:
-                words.append(i)
-            else:
-                result.append("".join(words))
-                words.clear()
-                words.append(i)
-                counter = counter + 1
-        else:
-            words.append(i)
-    result.append("".join(words))
+    for i in indexes:
+        result.append(s[counter:i])
+        counter = i
+    result.append(s[counter:])
     return result
 
-s = 'pythoniscool,isn`tit?'
+
+s = "pythoniscool,isn'tit?"
 indexes = [6, 8, 12, 13, 18]
 print(split_by_index(s, indexes))
