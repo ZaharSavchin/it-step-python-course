@@ -1,0 +1,12 @@
+<root>
+    <persons>
+        <teacher>
+            <name>Bob</name>
+            <age>43</age>
+        </teacher>
+        <student>
+            <name>Jim</name>
+            <age>17</age>
+        </student>
+    </persons>
+</root>
