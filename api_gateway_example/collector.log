@@ -1,0 +1,4 @@
+2023-02-27 20:58:54,663 Application is running ...
+2023-02-27 20:59:02,606 Got data for London
+2023-02-27 20:59:02,612 Data for London has been saved into database
+2023-02-27 20:59:02,613 ::1 [27/Feb/2023:17:59:02 +0000] "GET /weather?city=London HTTP/1.1" 200 215 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
